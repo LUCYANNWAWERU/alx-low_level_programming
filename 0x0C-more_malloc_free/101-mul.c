@@ -14,7 +14,6 @@ void _print(char *str, int l)
 	while (i < l)
 	{
 		if (str[i] != '0')
-
 			j = 1;
 		if (j || i == l - 1)
 			_putchar(str[i]);
@@ -34,6 +33,7 @@ void _print(char *str, int l)
  */
 char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 {
+
 	int j, k, mul, mulrem, add, addrem;
 
 	mulrem = addrem = 0;
@@ -67,6 +67,7 @@ int check_for_digits(char **av)
 	int i, j;
 
 	for (i = 1; i < 3; i++)
+
 	{
 		for (j = 0; av[i][j]; j++)
 		{
@@ -106,9 +107,9 @@ int main(int argc, char *argv[])
 
 	if (argc != 3 || check_for_digits(argv))
 	{
-
 		for (ti = 0; e[ti]; ti++)
 			_putchar(e[ti]);
+
 		exit(98);
 	}
 	for (l1 = 0; argv[1][l1]; l1++)
